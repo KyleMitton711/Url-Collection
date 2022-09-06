@@ -4,6 +4,7 @@ const sql = require("./db.js");
 const PostbackRobustDigital = function(url) {
   this.clickid = url.clickid;
   this.revenue = url.revenue;
+  this.timestamp = new Date();
 };
 
 PostbackRobustDigital.create = (newParams, result) => {
