@@ -7,4 +7,5 @@ module.exports = app => {
   router.post("/postbackrobustdigital/", postbackrobustdigital.create);
 
   app.use('/api', router);
+  app.use('/healthy', (req, res) => { res.send('ok') });
 };
