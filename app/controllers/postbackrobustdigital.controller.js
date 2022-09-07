@@ -9,6 +9,8 @@ exports.create = (req, res) => {
     });
   }
 
+  console.log(req.body);
+
   // Create a PostbackRobustDigital params
   const params = new PostbackRobustDigital({
     clickid: req.body.clickid,
